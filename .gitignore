@@ -1,0 +1,53 @@
+# ── OS / Editor ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ── Node / npm (build tools, linters) ─────────────────────────
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ── Composer / PHP dependencies ───────────────────────────────
+vendor/
+composer.lock
+
+# ── Build artifacts / logs ─────────────────────────────────────
+*.log
+build/
+dist/
+.cache/
+
+# ── WordPress / WP CLI local files ────────────────────────────
+wp-cli.local.yml
+.wordpress/
+wp-config-local.php
+
+# ── Plugin-specific runtime artifacts ─────────────────────────
+# Cached sync data (regenerable from API)
+ventresslabs-intcomex-integration/cache/
+# Local E2E artifacts / reports
+ventresslabs-intcomex-integration/bin/*.log
+ventresslabs-intcomex-integration/bin/*.json
+ventresslabs-intcomex-integration/bin/e2e-report.*
+
+# ── Environment / secrets ──────────────────────────────────────
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.local.json
+
+# ── Test coverage ─────────────────────────────────────────────
+coverage/
+.coverage
+phpunit-result.xml
